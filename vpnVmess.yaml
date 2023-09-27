@@ -1,0 +1,68 @@
+proxies:
+- name: vmess2
+  server: 162.159.138.6
+  type: vmess
+  port: 443
+  uuid: b43b5210-a433-44d2-9b5c-289380f57e32
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: id3.xv2ray.net
+  network: ws
+  ws-opts:
+    path: /vmess
+    headers:
+      Host: id3.xv2ray.net
+  udp: true
+
+- name: vmess1
+  server: 162.159.138.6
+  type: vmess
+  port: 443
+  uuid: 8fb07972-5b47-11ee-91b0-00163e870a9c
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: indo5.vpnjantit.com
+  network: ws
+  ws-opts:
+    path: /vpnjantit
+    headers:
+      Host: indo5.vpnjantit.com
+  udp: true
+
+- name: lb.vhax.net
+  server: 162.159.138.6
+  type: vmess
+  port: 443
+  uuid: 6fea1649-425b-4092-bf53-29792152c925
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: lb.vhax.net
+  network: ws
+  ws-opts:
+    path: /sshkit/Gehjaka/650ed2283c181/
+    headers:
+      Host: lb.vhax.net
+  udp: true
+
+- name: mainssh
+  server: 162.159.138.6
+  type: vmess
+  port: 443
+  uuid: bb260298-9613-4a65-b21d-d2d21c685bb5
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: sg2mws.mainssh.xyz
+  network: ws
+  ws-opts:
+    path: /vmess
+    headers:
+      Host: sg2mws.mainssh.xyz
+  udp: true
